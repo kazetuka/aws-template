@@ -1,4 +1,4 @@
-EC2Instance:
+NewEC2Instance:
   Type: AWS::EC2::Instance
   Properties:
     KeyName:
