@@ -1,2 +1,3 @@
-FROM httpd:2.4
-COPY index.html /usr/local/apache2/htdocs/index.html
+FROM maven:3.3.9-jdk-8
+
+RUN echo "Hello World"
