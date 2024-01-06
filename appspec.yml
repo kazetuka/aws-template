@@ -1,0 +1,11 @@
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        #        TaskDefinition: "arn:aws:ecs:us-east-1:account-id:task-definition/BlueGreenTask:1"
+        TaskDefinition: "arn:aws:ecs:ap-northeast-1:258022105560:task-definition/task11:1"
+        LoadBalancerInfo:
+          ContainerName: "container011"
+          ContainerPort: 80
+        PlatformVersion: "LATEST"
